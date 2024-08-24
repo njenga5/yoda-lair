@@ -1,13 +1,16 @@
 from playwright.sync_api import sync_playwright, Page, BrowserContext, TimeoutError, expect
 from datetime import datetime as dt
 from playwright_stealth import stealth_sync
+from pathlib import Path
 import logging
-
+import os
+import yagmail
+from datetime import datetime as dt
 
 logging.basicConfig(filename='logs/applogs.log', level=logging.INFO, 
 format='%(asctime)s - %(levelname)s - %(name)s --- %(message)s', 
 datefmt='%a %b %d %Y %H:%M:%S %z GMT')
-
+appdata = os.getenv('appdata')
 
 URL = 'https://freebitco.in/?op=home'
 
@@ -30,11 +33,19 @@ def roll(page: Page, profile:str):
         page.wait_for_timeout(1000)
         roll_btn = page.locator('#free_play_form_button')
         roll_btn.scroll_into_view_if_needed()
-        page.frame_locator('iframe').first.locator('#anchor-tc').click(timeout=5000)
-        # page.mouse.click(564, 480, delay=1, click_count=3)
-        page.wait_for_timeout(15000)
-        roll_btn.click(timeout=5000)
-        check_final_balance()
+        iframe = page.frame_locator('iframe').first
+        while iframe.locator('#success').is_hidden():
+            page.mouse.click(564, 480, delay=1, click_count=3)
+            page.wait_for_timeout(5000)
+            with open('shot.png', 'wb') as f:
+                f.write(page.screenshot())
+            break
+            # page.wait_for_timeout(5000)
+        roll_btn.click(timeout=10000)
+        if dt.now().hour == 23 or dt.now().hour == 11 or dt.now().hour == 17:
+            yag = yagmail.SMTP('hannahkamau1964@gmail.com', 'oxbgivizmibwwnqx')
+            yag.send(to='joninduati31@gmail.com', subject=f"{profile.title()} captcha", attachments=['./shot.png'], contents=f'balance: {page.locator('#balance_small').text_content()}')
+        # check_final_balance()
 
     except TimeoutError as e:
         if '<iframe' in e.message:
@@ -53,18 +64,24 @@ def roll(page: Page, profile:str):
             print("In Roll: "+e.message+"\n\n")
             logging.exception(e.stack)
 
-
+    except:
+        raise
 def open_profile(profile: str) -> None:
     try:
-        with sync_playwright() as playwright:
-            context = playwright.firefox.launch_persistent_context \
+        with sync_playwright() as pl:
+            context = pl.firefox.launch_persistent_context \
             (
-                f'{profile}-moz-profile', 
-                # headless=False, 
-                color_scheme='dark',
-                args=['-override', 'override.ini'], 
+                # Path(__file__).resolve().parent / f'{profile}-moz-profile', 
+                profile,
+		        headless=True, 
+                # color_scheme='dark',
+                # args=['--no-default-browser-check'], # chromium
+                args=['-override', 'override.ini'],
+                slow_mo=100,
+            
             )
             page = context.pages[0]
+            # page = context.new_page()
             stealth_sync(page)
             response = page.goto(URL)
             print(f'Response: {response.status} {response.status_text}')
@@ -74,5 +91,5 @@ def open_profile(profile: str) -> None:
     except Exception as e:
         logging.exception(e)
 
-
-open_profile('intranetsite')
+import sys
+open_profile(sys.argv[1])

@@ -1,0 +1,652 @@
+Sat Aug 24 2024 05:53:27 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 05:53:28 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 05:58:40 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 05:58:40 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:01:17 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:01:18 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:01:50 +0300 GMT - ERROR - root ---   File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 85, in <module>
+    open_profile('intranetsite')
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 79, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 35, in roll
+    print(page.frame_locator('iframe').first.locator('#RlquG0').click())
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15864, in click
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 109, in _sync
+    setattr(task, "__pw_stack_trace__", traceback.extract_stack())
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 35, in roll
+    print(page.frame_locator('iframe').first.locator('#RlquG0').click())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15864, in click
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 158, in click
+    return await self._frame.click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 494, in click
+    await self._channel.send("click", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Sat Aug 24 2024 06:06:23 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:06:24 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:06:58 +0300 GMT - ERROR - root ---   File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 87, in <module>
+    open_profile('intranetsite')
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 81, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 37, in roll
+    iframe.locator('#RlquG0').click()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15864, in click
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 109, in _sync
+    setattr(task, "__pw_stack_trace__", traceback.extract_stack())
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 37, in roll
+    iframe.locator('#RlquG0').click()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15864, in click
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 158, in click
+    return await self._frame.click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 494, in click
+    await self._channel.send("click", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Sat Aug 24 2024 06:09:26 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:09:27 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:10:03 +0300 GMT - ERROR - root ---   File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 88, in <module>
+    open_profile('intranetsite')
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 82, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    iframe.get_by_role('checkbox').first.click()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15864, in click
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 109, in _sync
+    setattr(task, "__pw_stack_trace__", traceback.extract_stack())
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    iframe.get_by_role('checkbox').first.click()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15864, in click
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 158, in click
+    return await self._frame.click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 494, in click
+    await self._channel.send("click", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Sat Aug 24 2024 06:11:32 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:11:33 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:12:11 +0300 GMT - ERROR - root ---   File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 88, in <module>
+    open_profile('intranetsite')
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 82, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    iframe.get_by_text('Verify you are human').click()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15864, in click
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 109, in _sync
+    setattr(task, "__pw_stack_trace__", traceback.extract_stack())
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    iframe.get_by_text('Verify you are human').click()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15864, in click
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 158, in click
+    return await self._frame.click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 494, in click
+    await self._channel.send("click", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Sat Aug 24 2024 06:13:12 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:13:12 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:14:41 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:14:42 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:15:12 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:15:13 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:15:49 +0300 GMT - ERROR - root ---   File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 88, in <module>
+    open_profile('intranetsite')
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 82, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    print(iframe.get_by_role('checkbox').check())
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15766, in check
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 109, in _sync
+    setattr(task, "__pw_stack_trace__", traceback.extract_stack())
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    print(iframe.get_by_role('checkbox').check())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15766, in check
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 143, in check
+    return await self._frame.check(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 749, in check
+    await self._channel.send("check", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Sat Aug 24 2024 06:18:05 +0300 GMT - ERROR - root --- Timeout 30000ms exceeded.
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 80, in open_profile
+    response = page.goto(URL)
+               ^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 9327, in goto
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_page.py", line 484, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 149, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Sat Aug 24 2024 06:18:19 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:18:20 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:18:56 +0300 GMT - ERROR - root ---   File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 89, in <module>
+    open_profile('intranetsite')
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 83, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 39, in roll
+    checkbox.check()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15766, in check
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 109, in _sync
+    setattr(task, "__pw_stack_trace__", traceback.extract_stack())
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 39, in roll
+    checkbox.check()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 15766, in check
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 143, in check
+    return await self._frame.check(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 749, in check
+    await self._channel.send("check", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Sat Aug 24 2024 06:19:52 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:19:53 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:20:05 +0300 GMT - ERROR - root --- Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_role("checkbox")
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 84, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    expect(iframe.get_by_role('checkbox')).to_be_visible()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 20902, in to_be_visible
+    self._sync(self._impl_obj.to_be_visible(visible=visible, timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 654, in to_be_visible
+    await self._expect_impl(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 70, in _expect_impl
+    raise AssertionError(
+AssertionError: Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_role("checkbox")
+
+Sat Aug 24 2024 06:20:41 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:20:42 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:20:55 +0300 GMT - ERROR - root --- Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_role("checkbox")
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 85, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    expect(iframe.get_by_role('checkbox')).to_be_visible()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 20902, in to_be_visible
+    self._sync(self._impl_obj.to_be_visible(visible=visible, timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 654, in to_be_visible
+    await self._expect_impl(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 70, in _expect_impl
+    raise AssertionError(
+AssertionError: Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_role("checkbox")
+
+Sat Aug 24 2024 06:22:21 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:22:22 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:22:34 +0300 GMT - ERROR - root --- Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_role("checkbox")
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 86, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 39, in roll
+    expect(iframe.get_by_role('checkbox')).to_be_visible()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 20902, in to_be_visible
+    self._sync(self._impl_obj.to_be_visible(visible=visible, timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 654, in to_be_visible
+    await self._expect_impl(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 70, in _expect_impl
+    raise AssertionError(
+AssertionError: Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_role("checkbox")
+
+Sat Aug 24 2024 06:23:41 +0300 GMT - ERROR - root --- Timeout 30000ms exceeded.
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 83, in open_profile
+    response = page.goto(URL)
+               ^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 9327, in goto
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_page.py", line 484, in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 149, in goto
+    await self._channel.send("goto", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Sat Aug 24 2024 06:25:58 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:25:58 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:26:06 +0300 GMT - ERROR - root --- 'FrameLocator' object has no attribute 'get_by_tex'
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 86, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    expect(iframe.get_by_tex('Verify you are human')).to_be_visible()
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'FrameLocator' object has no attribute 'get_by_tex'
+Sat Aug 24 2024 06:27:17 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:27:18 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:27:30 +0300 GMT - ERROR - root --- Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_text("Verify you are human")
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 86, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    expect(iframe.get_by_text('Verify you are human')).to_be_visible()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 20902, in to_be_visible
+    self._sync(self._impl_obj.to_be_visible(visible=visible, timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 654, in to_be_visible
+    await self._expect_impl(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 70, in _expect_impl
+    raise AssertionError(
+AssertionError: Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_text("Verify you are human")
+
+Sat Aug 24 2024 06:28:00 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:28:00 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:28:12 +0300 GMT - ERROR - root --- Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_text("Verify you are human")
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 87, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    expect(iframe.get_by_text('Verify you are human')).to_be_visible()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 20902, in to_be_visible
+    self._sync(self._impl_obj.to_be_visible(visible=visible, timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 654, in to_be_visible
+    await self._expect_impl(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_assertions.py", line 70, in _expect_impl
+    raise AssertionError(
+AssertionError: Locator expected to be visible
+Actual value: None 
+Call log:
+LocatorAssertions.to_be_visible with timeout 5000ms
+  - waiting for frame_locator("iframe").first.get_by_text("Verify you are human")
+
+Sat Aug 24 2024 06:33:26 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:33:27 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:35:14 +0300 GMT - ERROR - root --- Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 82, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    page.wait_for_timeout(15000)
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 11894, in wait_for_timeout
+    self._sync(self._impl_obj.wait_for_timeout(timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_page.py", line 981, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 764, in wait_for_timeout
+    await self._channel.send("waitForTimeout", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+Sat Aug 24 2024 06:35:37 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:35:38 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:36:52 +0300 GMT - ERROR - root --- Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 82, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    page.wait_for_timeout(5000)
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 11894, in wait_for_timeout
+    self._sync(self._impl_obj.wait_for_timeout(timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_page.py", line 981, in wait_for_timeout
+    await self._main_frame.wait_for_timeout(timeout)
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 764, in wait_for_timeout
+    await self._channel.send("waitForTimeout", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+Sat Aug 24 2024 06:37:43 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:37:44 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:38:37 +0300 GMT - ERROR - root --- Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 82, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 36, in roll
+    while iframe.locator('#success').is_hidden():
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 17604, in is_hidden
+    self._sync(self._impl_obj.is_hidden(timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 490, in is_hidden
+    return await self._frame.is_hidden(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 353, in is_hidden
+    return await self._channel.send("isHidden", locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+Sat Aug 24 2024 06:39:18 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:39:19 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:39:48 +0300 GMT - ERROR - root --- invalid state
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 82, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 37, in roll
+    page.mouse.click(564, 480, delay=1, click_count=3)
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 1494, in click
+    self._sync(
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_input.py", line 72, in click
+    await self._channel.send("mouseClick", locals_to_params(locals()))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: Connection closed while reading from the driver
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 65, in open_profile
+    with sync_playwright() as pl:
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_context_manager.py", line 90, in __exit__
+    self._connection.stop_sync()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 284, in stop_sync
+    self.cleanup()
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 300, in cleanup
+    callback.future.set_exception(self._closed_error)
+asyncio.exceptions.InvalidStateError: invalid state
+Sat Aug 24 2024 06:41:05 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:41:06 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:41:46 +0300 GMT - ERROR - root --- Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 84, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    if page.frame_locator('iframe').first.locator('#success').is_visible():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 17636, in is_visible
+    self._sync(self._impl_obj.is_visible(timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 498, in is_visible
+    return await self._frame.is_visible(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 358, in is_visible
+    return await self._channel.send("isVisible", locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+Sat Aug 24 2024 06:42:21 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:42:22 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:43:26 +0300 GMT - ERROR - root --- Target page, context or browser has been closed
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 85, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 38, in roll
+    print(page.frame_locator('iframe').first.locator('#success').is_visible())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 17636, in is_visible
+    self._sync(self._impl_obj.is_visible(timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 498, in is_visible
+    return await self._frame.is_visible(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 358, in is_visible
+    return await self._channel.send("isVisible", locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed
+Sat Aug 24 2024 06:46:20 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:46:20 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:46:54 +0300 GMT - ERROR - root ---   File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 91, in <module>
+    open_profile('intranetsite')
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 85, in open_profile
+    roll(page, profile)
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 36, in roll
+    while page.frame_locator('iframe').first.locator('#success').is_disabled():
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 17506, in is_disabled
+    self._sync(self._impl_obj.is_disabled(timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 109, in _sync
+    setattr(task, "__pw_stack_trace__", traceback.extract_stack())
+Traceback (most recent call last):
+  File "c:\Users\John\OneDrive\Desktop\tests\btc\workers\single\single.py", line 36, in roll
+    while page.frame_locator('iframe').first.locator('#success').is_disabled():
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\sync_api\_generated.py", line 17506, in is_disabled
+    self._sync(self._impl_obj.is_disabled(timeout=timeout))
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_sync_base.py", line 115, in _sync
+    return task.result()
+           ^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_locator.py", line 466, in is_disabled
+    return await self._frame.is_disabled(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_frame.py", line 338, in is_disabled
+    return await self._channel.send("isDisabled", locals_to_params(locals()))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 63, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 495, in wrap_api_call
+    return await cb()
+           ^^^^^^^^^^
+  File "C:\Users\John\OneDrive\Desktop\tests\btc\workers\.env\Lib\site-packages\playwright\_impl\_connection.py", line 101, in inner_send
+    result = next(iter(done)).result()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+playwright._impl._errors.TimeoutError: Timeout 30000ms exceeded.
+Sat Aug 24 2024 06:53:10 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:53:10 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 06:58:04 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 06:58:04 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 07:00:06 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 07:00:07 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 07:01:49 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 07:01:50 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 07:02:28 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 07:02:29 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000055
+Sat Aug 24 2024 07:03:22 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 07:03:25 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000075
+Sat Aug 24 2024 07:09:18 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 07:09:19 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000075
+Sat Aug 24 2024 07:40:21 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 07:40:22 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000075
+Sat Aug 24 2024 07:43:21 +0300 GMT - INFO - root --- Response: 200 
+Sat Aug 24 2024 07:43:22 +0300 GMT - INFO - root --- BALANCE BEFORE: 0.00000075

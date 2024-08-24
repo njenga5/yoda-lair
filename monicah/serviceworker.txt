@@ -1,0 +1,13 @@
+9
+
+https://freebitco.in/
+https://freebitco.in/service-worker.js
+true
+{8780bd63-277f-4b1c-a8fc-30780c31c6d3}
+2
+1724467124149902
+1724467124150544
+1724467123244634
+0
+true
+#
