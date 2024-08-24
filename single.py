@@ -42,9 +42,9 @@ def roll(page: Page, profile:str):
             break
             # page.wait_for_timeout(5000)
         roll_btn.click(timeout=10000)
-        if dt.now().hour == 23 or dt.now().hour == 11 or dt.now().hour == 17:
-            yag = yagmail.SMTP('hannahkamau1964@gmail.com', 'oxbgivizmibwwnqx')
-            yag.send(to='joninduati31@gmail.com', subject=f"{profile.title()} captcha", attachments=['./shot.png'], contents=f'balance: {page.locator('#balance_small').text_content()}')
+        # if dt.now().hour == 23 or dt.now().hour == 11 or dt.now().hour == 17:
+        yag = yagmail.SMTP('hannahkamau1964@gmail.com', 'oxbgivizmibwwnqx')
+        yag.send(to='joninduati31@gmail.com', subject=f"{profile.title()} captcha", attachments=['./shot.png'], contents=f'balance: {page.locator('#balance_small').text_content()}')
         # check_final_balance()
 
     except TimeoutError as e:
