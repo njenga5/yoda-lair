@@ -7,7 +7,7 @@ import os
 import yagmail
 from datetime import datetime as dt
 
-logging.basicConfig(filename='logs/applogs.log', level=logging.INFO, 
+logging.basicConfig(filename='yoda-lair/logs/applogs.log', level=logging.INFO, 
 format='%(asctime)s - %(levelname)s - %(name)s --- %(message)s', 
 datefmt='%a %b %d %Y %H:%M:%S %z GMT')
 appdata = os.getenv('appdata')
@@ -37,7 +37,7 @@ def roll(page: Page, profile:str):
         while iframe.locator('#success').is_hidden():
             page.mouse.click(564, 480, delay=1, click_count=3)
             page.wait_for_timeout(5000)
-            with open('shot.png', 'wb') as f:
+            with open('yoda-lair/shot.png', 'wb') as f:
                 f.write(page.screenshot())
             break
             # page.wait_for_timeout(5000)
