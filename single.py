@@ -63,7 +63,7 @@ def roll(page: Page, profile:str):
         else:
             print("In Roll: "+e.message+"\n\n")
             logging.exception(e.stack)
-
+        raise
     except:
         raise
 def open_profile(profile: str) -> None:
@@ -90,6 +90,7 @@ def open_profile(profile: str) -> None:
             context.close()
     except Exception as e:
         logging.exception(e)
+        raise
 
 import sys
 open_profile(sys.argv[1])
