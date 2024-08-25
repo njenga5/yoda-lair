@@ -37,6 +37,7 @@ def roll(page: Page, profile:str):
         while True:
             page.mouse.click(564, 480, delay=1, click_count=3)
             page.wait_for_timeout(5000)
+            print('waiting')
             if iframe.locator('#success').is_visible():
                 break
 
