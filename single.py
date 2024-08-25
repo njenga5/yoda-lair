@@ -75,7 +75,7 @@ def open_profile(profile: str) -> None:
 		        headless=True, 
                 # color_scheme='dark',
                 # args=['--no-default-browser-check'], # chromium
-                args=['-override', 'override.ini'],
+                # args=['-override', 'override.ini'],
                 slow_mo=100,
             
             )
