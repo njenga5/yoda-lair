@@ -72,7 +72,7 @@ def open_profile(profile: str) -> None:
             (
                 # Path(__file__).resolve().parent / f'{profile}-moz-profile', 
                 profile,
-		        headless=False, 
+		        headless=True, 
                 # color_scheme='dark',
                 # args=['--no-default-browser-check'], # chromium
                 args=['-override', 'override.ini'],
