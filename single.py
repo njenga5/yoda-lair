@@ -34,17 +34,18 @@ def roll(page: Page, profile:str):
         roll_btn = page.locator('#free_play_form_button')
         roll_btn.scroll_into_view_if_needed()
         iframe = page.frame_locator('iframe').first
-        while iframe.locator('#success').is_hidden():
+        while True:
             page.mouse.click(564, 480, delay=1, click_count=3)
             page.wait_for_timeout(5000)
-            with open('yoda-lair/shot.png', 'wb') as f:
-                f.write(page.screenshot())
-            break
-            # page.wait_for_timeout(5000)
-        roll_btn.click(timeout=10000)
+            if iframe.locator('#success').is_visible():
+                break
+
+        with open('yoda-lair/shot.png', 'wb') as f:
+            f.write(page.screenshot())
+        # roll_btn.click(timeout=10000)
         # if dt.now().hour == 23 or dt.now().hour == 11 or dt.now().hour == 17:
         yag = yagmail.SMTP('hannahkamau1964@gmail.com', 'oxbgivizmibwwnqx')
-        yag.send(to='joninduati31@gmail.com', subject=f"{profile.title()} captcha", attachments=['./shot.png'], contents=f"balance: {page.locator('#balance_small').text_content()}")
+        yag.send(to='joninduati31@gmail.com', subject=f"{profile.title()} captcha", attachments=['./yoda-lair/shot.png'], contents=f"balance: {page.locator('#balance_small').text_content()}")
         # check_final_balance()
 
     except TimeoutError as e:
