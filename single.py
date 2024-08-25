@@ -34,12 +34,13 @@ def roll(page: Page, profile:str):
         roll_btn = page.locator('#free_play_form_button')
         roll_btn.scroll_into_view_if_needed()
         iframe = page.frame_locator('iframe').first
-        while True:
-            page.mouse.click(564, 480, delay=1, click_count=3)
-            page.wait_for_timeout(5000)
-            print('waiting')
-            if iframe.locator('#success').is_visible():
-                break
+        page.wait_for_timeout(5000)
+        # while True:
+        page.mouse.click(564, 480, delay=1, click_count=3)
+        page.wait_for_timeout(5000)
+        print('waiting')
+        # if iframe.locator('#success').is_visible():
+        #     break
 
         with open('yoda-lair/shot.png', 'wb') as f:
             f.write(page.screenshot())
