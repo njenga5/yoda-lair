@@ -81,6 +81,7 @@ def open_profile(profile: str) -> None:
                 slow_mo=100,
             
             )
+            print('browser launched')
             page = context.pages[0]
             # page = context.new_page()
             stealth_sync(page)
