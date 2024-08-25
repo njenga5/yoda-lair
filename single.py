@@ -64,8 +64,7 @@ def roll(page: Page, profile:str):
             print("In Roll: "+e.message+"\n\n")
             logging.exception(e.stack)
         raise
-    except:
-        raise
+    
 def open_profile(profile: str) -> None:
     try:
         with sync_playwright() as pl:
@@ -73,7 +72,7 @@ def open_profile(profile: str) -> None:
             (
                 # Path(__file__).resolve().parent / f'{profile}-moz-profile', 
                 profile,
-		        headless=True, 
+		        headless=False, 
                 # color_scheme='dark',
                 # args=['--no-default-browser-check'], # chromium
                 args=['-override', 'override.ini'],
